@@ -11,11 +11,11 @@ faceCascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 # Load an color image in grayscale
 img = cv2.imread('Images\image2.jpg',1)
 scale_percent = 30 # percent of original size
-width = int(700)
-height = int(700)
-dim = (width, height)
+# width = int(700)
+# height = int(700)
+# dim = (width, height)
 # resize image
-img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
+# img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
 
 #img = cv2.flip(img, -1)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -24,7 +24,7 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # important parameters on detected face.
 faces = faceCascade.detectMultiScale(
         gray,     
-        scaleFactor=1.2,
+        scaleFactor=1.1,
         minNeighbors=5,     
         minSize=(20, 20)
     )
