@@ -12,7 +12,7 @@ Developed by Marcelo Rovai - MJRoBot.org @ 21Feb18
 import cv2
 import os
 
-cam = cv2.VideoCapture("Images/8.mp4")
+cam = cv2.VideoCapture("Images/9.mp4")
 # cam.set(3, 640) # set video width
 # cam.set(4, 480) # set video height
 
